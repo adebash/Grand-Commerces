@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Lexend';
+  src: url('../fonts/LexendDeca-VariableFont_wght.ttf');
+  font-style: normal;
+}
+
+:root {
+  /* MAIN COLORS */
+  --color-primary: #FF3333;
+  --color-primary-light: #FF6666;
+  --color-success: #28A745;
+  --color-error: #DC3545;
+  --color-info: #17A2B8;
+  --color-warning: #FFC107;
+
+  /* COLORS ALTERNATIVES */
+  --color-alt-primary: #FF333335;
+  --color-alt-primary-light: #FF666635;
+  --color-alt-success: #28A74535;
+  --color-alt-error: #DC354535;
+  --color-alt-info: #17A2B835;
+  --color-alt-warning: #FFC10735;  
+
+  /* BACKGROUND COLORS */
+  --bg-main: #FFFFFF;
+  --bg-card: #F8F8F8;
+  --bg-muted: #F2F2F2;
+
+  /* TEXT */
+  --text-main: #1A1A1A;
+  --text-secondary: #555555;
+  --text-inverted: #FFFFFF;
+
+  /* BORDERS */
+  --border-color: #E0E0E0;
+
+  /* LINKS */
+  --link-color: var(--color-primary);
+  --link-hover: var(--color-primary-light);
+}
+
+.light {
+  background-color: gainsboro;
+}
+
+.dark {
+  background-color: black;
+}
+
+* {
+  font-family: 'Lexend', sans-serif, 'Trebuchet MS';
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+  color: currentColor;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+svg {
+  width: 1.5em;
+}
+
+body {
+  font-size: 13px;
+  height: 100vh;
+  width: 100%;
+}
+
+body>* {
+  width: 100%;
+  padding: 0 50px;
+}
+
+body header .header-main {
+  border-bottom: 2px solid var(--border-color);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body header .header-main form.searchBox {
+  height: 40px;
+  width: 300px;
+  position: relative;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+body header .header-main form.searchBox input {
+  height: 40px;
+  width: 100%;
+  border: none;
+  text-indent: 1em;
+}
+
+body header .header-main form.searchBox input ~ button {
+  height: 40px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+body header .header-main form.searchBox input ~ button:hover {
+  background-color: var(--color-primary-light);
+}
+
+body header .header-main nav .links-text{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  background-color: #17A2B8;
+}
