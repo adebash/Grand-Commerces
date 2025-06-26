@@ -1,7 +1,7 @@
 let headerFeatureItems = document.querySelectorAll('.header-features-item');
 const headerFeatures = document.getElementById('header-features');
 const headerFeaturesDetailsItems = document.getElementById('header-features-details-items');
-console.log(headerFeatureItems, headerFeatures, );
+console.log(headerFeatureItems, headerFeatures, headerFeaturesDetailsItems);
 
 //CREATE A FUNCTION FOR HEADER FEATURES CONTAINING
 

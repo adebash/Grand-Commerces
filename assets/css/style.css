@@ -22,14 +22,8 @@
   --color-alt-warning: #FFC10735;  
 
   /* BACKGROUND COLORS */
-  --bg-main: #FFFFFF;
-  --bg-card: #F8F8F8;
-  --bg-muted: #F2F2F2;
 
   /* TEXT */
-  --text-main: #1A1A1A;
-  --text-secondary: #555555;
-  --text-inverted: #FFFFFF;
 
   /* BORDERS */
   --border-color: #E0E0E0;
@@ -40,10 +34,24 @@
 }
 
 .light {
+  --bg-main: #FFFFFF;
+  --bg-card: #F8F8F8;
+  --bg-muted: #F2F2F2;
+
+  --text-main: #1A1A1A;
+  --text-secondary: #555555;
+
   background-color: var(--bg-muted);
 }
 
 .dark {
+  --bg-main: #1A1A1A;
+  --bg-card: #555555;
+  --bg-muted: #B4B4B4;
+
+  --text-main: #FFFFFF;
+  --text-secondary: #F8F8F8;
+
   background-color: var(--text-main);
 }
 
@@ -125,7 +133,7 @@ body header .header-main form.searchBox input {
 body header .header-main form.searchBox input ~ button {
   height: 3.05em;
   background-color: var(--color-primary);
-  color: var(--text-inverted);
+  color: var(--bg-main);
   font-weight: 500;
   border: none;
   position: absolute;
@@ -165,7 +173,7 @@ body header .header-main button:has(svg) {
   padding: 0.4em 0.8em;
   border-radius: 1em;
   height: 2.7em;
-  background-color: var(--text-inverted);
+  background-color: var(--bg-card);
   border: none;
   color: var(--text-main);
   border: 1px solid var(--color-alt-primary-light);
@@ -177,7 +185,7 @@ body header .header-main div > button:hover {
 
 body header .header-main .user-language,
 body header .header-main .theme-color {
-  height: 2.7em;
+  height: 2.8em;
   z-index: 2;
   overflow: hidden;
 }
@@ -210,7 +218,7 @@ body header .header-main .user-language .languages-opts button,
 body header .header-main .theme-color .themes-opts button {
   width: 100%;
   height: 2.7em;
-  border: 1px solid var(--text-inverted);
+  border: 1px solid var(--bg-main);
   background-color: transparent;
   color: var(--text-main);
   background-color: var(--bg-card);
@@ -236,7 +244,7 @@ body header .header-features .header-features-items {
   height: 5em;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2em;
 }
 
@@ -245,7 +253,7 @@ body header .header-features .header-features-items button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--text-inverted);
+  border: 1px solid var(--bg-main);
   padding: .5em 1em;
   border-radius: 1em;
   background-color: var(--bg-main);
@@ -259,4 +267,8 @@ body header .header-features .header-features-items button:hover {
 
 body header .header-features .header-features-items button:hover {
   background-color: var(--color-alt-primary-light);
+}
+
+body header .header-features .header-features-details-items {
+  height: 0em;
 }
